@@ -11,13 +11,13 @@ O desafio pede para que criemos duas páginas web interativas, com roteamento en
 Primeiro clone o projeto na sua máquina com o comando:
 
 ```
-git clone git@github.com:devLucasCBMelo/desafio-react-lacrei.git
+git clone git@github.com:devLucasCBMelo/desafio-react-next-lacrei.git
 ```
 
 entre na pasta do projeto com o comando:
 
 ```
-cd desafio-react-lacrei
+cd desafio-react-next-lacrei
 ```
 
 instale as dependências com o comando:
