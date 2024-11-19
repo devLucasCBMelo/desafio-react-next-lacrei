@@ -1,3 +1,10 @@
+const background_color = {
+  disabled_base: '#F0F0F0',
+  disabled_dark: '#CFCFCF',
+  default: '#FFFFFF',
+  highlight: '#F9F3FF',
+}
+
 const background_accent = {
   lighter: '#DFF2ED', 
   light: '#B2DFD0',
@@ -24,4 +31,4 @@ const color_text = {
   pressed: '#014C37'
 }
 
-export { background_accent, color_text };
+export { background_color, background_accent, color_text };

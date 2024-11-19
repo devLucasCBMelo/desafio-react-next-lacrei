@@ -1,14 +1,24 @@
 'use client';
-import { HeaderContainer } from "../header/styles";
+import { HeaderContainer, DivLeftSide, DivRightSide } from "../header/styles";
 import Link from "next/link";
 
 export default function Header() {
   return (
     <HeaderContainer>
-      <h3>Lacrei Saúde</h3>
-      <Link href="/about">
-        <button>Criar conta</button>
-      </Link>
+      <div>
+        <DivLeftSide>
+          <h3>Lacrei Saúde</h3>
+        </DivLeftSide>
+        <DivRightSide>
+          <Link href="https://lacreisaude.com.br/quem-somos/">
+            <button type="button">Quem Somos</button>
+          </Link>
+          <Link href="https://lacreisaude.com.br/ajuda/">
+            <button type="button">Ajuda</button>
+          </Link>
+          <button type="button">Entrar</button>
+        </DivRightSide>
+      </div>
     </HeaderContainer>
   )
 }
