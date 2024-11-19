@@ -5,6 +5,26 @@ const background_color = {
   highlight: '#F9F3FF',
 }
 
+const border_color = {
+  warning: '#963D1D',
+  info: '#4D8ACB',
+  info_dark: '#28588A',
+  default_light: '#CFCFCF',
+  default: '#131313',
+  default_dark: '#2D2D2D',
+  disabled: '#515151',
+  focus: '#4D8ACB',
+  accent: '#018762',
+  accent_dark: '#007756',
+  accent_darker: '#014C37',
+  success: '#298A46',
+  highlight: '#F9F3FF',
+  error: '#BC1C1C',
+  error_dark: '#9B1717',
+  error_darker: '#6F1111',
+  divider: '#B2DFD0'
+}
+
 const background_accent = {
   lighter: '#DFF2ED', 
   light: '#B2DFD0',
@@ -31,4 +51,4 @@ const color_text = {
   pressed: '#014C37'
 }
 
-export { background_color, background_accent, color_text };
+export { background_color, border_color, background_accent, color_text };
