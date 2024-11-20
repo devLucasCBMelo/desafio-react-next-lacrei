@@ -12,20 +12,22 @@ export default function Footer() {
     <FooterContainer>
       <FooterBox>
         <Image src={logo_branca} alt="logo da lacrei saúde" />
-        <ConectionBar>
-            <a href="https://www.facebook.com/lacrei.saude/">
-              <Image src={facebook_icon} alt="ícone do facebook" />
-            </a>
-            <a href="https://www.instagram.com/lacrei.saude/">
-              <Image src={intagram_icon} alt="ícone do instagram"/>
-            </a>
-            <a href="https://www.linkedin.com/company/lacrei-saude/">
-              <Image src={linkedin_icon} alt="ícone do linkedin"/>
-            </a>
-            <a href="mailto:contato@lacreisaude.com.br">
-              <Image src={email_icon} alt="ícone do email"/>
-            </a>
-        </ConectionBar>
+        <div>
+          <ConectionBar>
+              <a href="https://www.facebook.com/lacrei.saude/">
+                <Image src={facebook_icon} alt="ícone do facebook" />
+              </a>
+              <a href="https://www.instagram.com/lacrei.saude/">
+                <Image src={intagram_icon} alt="ícone do instagram"/>
+              </a>
+              <a href="https://www.linkedin.com/company/lacrei-saude/">
+                <Image src={linkedin_icon} alt="ícone do linkedin"/>
+              </a>
+              <a href="mailto:contato@lacreisaude.com.br">
+                <Image src={email_icon} alt="ícone do email"/>
+              </a>
+          </ConectionBar>
+        </div>
       </FooterBox>
       <FooterBox>
         <h2>Lacrei Saúde</h2>

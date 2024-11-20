@@ -6,12 +6,14 @@ export const FooterContainer = styled.footer`
   color: ${color_text.heading};
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: space-between;
   width: 80%;
+  
 
     h2 {
       font-size: 18px;
+      margin-bottom: 8px;
     }
 
     a {
@@ -22,10 +24,22 @@ export const FooterContainer = styled.footer`
 export const FooterBox = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 1rem;
+
+  div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+  }
 `
 
-export const ConectionBar = styled.div`
+export const ConectionBar = styled.nav`
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
 `
