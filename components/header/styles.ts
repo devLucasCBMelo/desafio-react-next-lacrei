@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {background_accent, background_color, color_text} from "@/utils/colors";
+import {background_accent, background_color, border_color, color_text} from "@/utils/colors";
 
 export const HeaderContainer = styled.header`
   background-color: #F5FFFB;
@@ -67,8 +67,8 @@ export const DivRightSide = styled.div`
       }
 
       &:focus {
-        outline: 1px solid ; /* Cor e espessura da borda */
-        outline-offset: 4px;    /* Distância entre a borda e o botão */
+        outline: 2px solid ${border_color.focus};
+        outline-offset: 4px;
       }
     }
   }
@@ -83,6 +83,11 @@ export const DivRightSide = styled.div`
     &:hover {
       cursor: pointer;
       background-color: ${background_accent.darker};
+    }
+
+    &:focus {
+      outline: 2px solid ${border_color.focus};
+      outline-offset: 4px;
     }
   }
 `;
