@@ -51,4 +51,12 @@ const color_text = {
   pressed: '#014C37'
 }
 
-export { background_color, border_color, background_accent, color_text };
+const color_gradient = {
+  lacrei: 'linear-gradient(90deg, #018383, #014687)',
+  header: 'linear-gradient(90deg, #F5FFFB, #FFFFFF)',
+  simbolo: 'linear-gradient(90deg, #008392, #00BC86)',
+  rosa: 'linear-gradient(90deg, #DF1098, #BA17E2)',
+};
+
+
+export { background_color, border_color, background_accent, color_text, color_gradient };
