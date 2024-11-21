@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {background_accent, background_color, border_color, color_text} from "@/utils/colors";
 
 export const HeaderContainer = styled.header`
-  background-color: #F5FFFB;
+  background-color: ${background_color.default};
   color: black;
   height: 100px;
   display: flex;
