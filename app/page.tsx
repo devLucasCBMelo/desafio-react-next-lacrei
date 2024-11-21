@@ -3,6 +3,10 @@ import styles from "./page.module.css";
 import Footer from "@/components/footer/Footer";
 import { CardList, FirstDivContainer, SecondDivContainer, SecondDivLeftContent, SecondDivRightContent } from "./styles";
 import Card from "@/components/card/Card";
+import ServiceCard from "@/components/serviceCard/ServiceCard";
+import doctorImage from '@/assets/doctor_image.png'
+import patientImage from '@/assets/patient_image.jpg'
+
 
 
 export default function Home() {
@@ -33,7 +37,9 @@ export default function Home() {
         </div>
         <div>
           <SecondDivRightContent>
-            Direita
+            <h2>Conecte-se aqui</h2>
+            <ServiceCard img_src={patientImage} title="Pacientes" text="Conecte-se a profissionais da saúde que estudam as necessidades da comunidade LGBTQIAPN+." buttonName="Buscar Atendimento" />
+            <ServiceCard img_src={doctorImage} title="Profissionais" text="Buscamos profissionais da saúde qualificados que priorizam o bem-estar físico e mental de pessoas LGBTQIAPN+." buttonName="Oferecer atendimento"/>
           </SecondDivRightContent>
         </div>
       </SecondDivContainer>

@@ -78,5 +78,14 @@ export const CardList = styled.div`
 `
 
 export const SecondDivRightContent = styled.div`
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: ${spacing_stack.xs};
+  }
 `

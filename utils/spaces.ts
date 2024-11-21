@@ -18,7 +18,7 @@ const spacing_squish = {
 
 const spacing_stack = {
   xxs: '4px',
-  xs: '8xp',
+  xs: '8px',
   s: '12px',
   m: '16px',
   xm: '24px',
