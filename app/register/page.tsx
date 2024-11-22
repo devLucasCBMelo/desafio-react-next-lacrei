@@ -2,7 +2,7 @@
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Buttons, ContentContainer, InputBorder, MainSection, Presentation, RegisterBody } from "./styles";
 import { Divider } from "../styles";
@@ -14,6 +14,18 @@ export default function Register () {
   const [showPassword, setShotPassword] = useState(false);
   const [userEmail, setUserEmail] = useState('');
   const [userPassword, setUserPassword] = useState('');
+  const [checkValues, setCheckValues] = useState(true);
+
+  const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userEmail);
+  const isPasswordValid = userPassword.length > 7;
+
+  useEffect(() => {
+    if (isEmailValid && isPasswordValid) {
+      setCheckValues(false);
+    } else {
+      setCheckValues(true);
+    }
+  }, [isEmailValid, isPasswordValid]);
 
   const hiddenOrHidePassword = () => {
     if (showPassword == false) {
@@ -25,6 +37,7 @@ export default function Register () {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event?.preventDefault();
+    alert('login efetuado com sucesso!')
   }
 
   return (
@@ -67,9 +80,8 @@ export default function Register () {
                   <button type="button" onClick={hiddenOrHidePassword}>{showPassword ? <FaEye/> : <FaEyeSlash /> }</button>
                 </InputBorder>
               </label>
-              <p id="senha-helpertext">Senha incorreta, digite novamente.</p>
               <Buttons>
-                <button type="submit">Entrar</button>
+                <button type="submit" disabled={checkValues}>Entrar</button>
                 <Link href="https://paciente.lacreisaude.com.br/cadastro/">
                   <button type="button">Criar conta</button>
                 </Link>

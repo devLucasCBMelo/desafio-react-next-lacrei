@@ -10,17 +10,17 @@ export default function Header() {
       <div>
         <DivLeftSide>
           <Link href="/">
-            <Image src={logo} alt="logo da lacrei saude" />
+            <Image id="logo_lacrei_header" src={logo} alt="logo da lacrei saude" />
           </Link>
         </DivLeftSide>
         <DivRightSide>
           <Link href="https://lacreisaude.com.br/quem-somos/">
-            <button type="button">Quem Somos</button>
+            <button id="quem_somos_button" type="button">Quem Somos</button>
           </Link>
           <Link href="https://lacreisaude.com.br/ajuda/">
-            <button type="button">Ajuda</button>
+            <button id="ajuda_button" type="button">Ajuda</button>
           </Link>
-          <button type="button">Entrar</button>
+          <button id="entrar_button" type="button">Entrar</button>
         </DivRightSide>
       </div>
     </HeaderContainer>

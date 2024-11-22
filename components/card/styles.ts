@@ -34,4 +34,31 @@ export const CardContainer = styled.div`
     line-height: 1.5rem;
     box-sizing: border-box;
   }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 450px;
+    border-radius: 8px;
+    padding: 0px;
+    gap: 1rem;
+    margin: 16px 16px;
+
+    h4 {
+      font-size: 1.125rem;
+      margin: 0px 10px;
+      text-align: start;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      box-sizing: border-box;
+      text-align: start;
+      padding: 4px 4px;
+      width: 400px;
+    }
+  }
 `

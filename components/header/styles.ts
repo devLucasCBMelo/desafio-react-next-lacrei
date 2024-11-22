@@ -24,7 +24,32 @@ export const HeaderContainer = styled.header`
     padding: 5px;
     height: 48px;
     font-weight: bold;
+  }
 
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 1rem;
+    }
+
+    #logo_lacrei_header {
+      margin-left: 48px;
+    }
+
+    #entrar_button {
+      margin-right: 48px;
+    }
+
+    a #quem_somos_button, #ajuda_button {
+      display: none;
+    }
   }
 `;
 

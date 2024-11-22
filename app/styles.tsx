@@ -43,6 +43,33 @@ export const FirstDivContainer = styled.div`
     height: 48px;
     font-weight: bold;
   } */
+
+   @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+
+    div {
+      margin: 0px 48px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      background-color: ${background_color.default};
+      border-radius: 8px;
+      padding: 8px 8px;
+    }
+
+   }
 `;
 
 export const SecondDivContainer = styled.div`
@@ -52,6 +79,10 @@ export const SecondDivContainer = styled.div`
   align-items: center;
   justify-content: space-evenly;
   width: 100vw;
+
+  @media (max-width: 768px) {
+    height: 700px;
+  }
 `;
 
 export const SecondDivLeftContent = styled.div`
@@ -67,6 +98,29 @@ export const SecondDivLeftContent = styled.div`
 
   h3 {
     margin: 16px 0 24px;
+    font-size: 1.5rem;
+    color: ${color_text.disabled}
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    h2 {
+      width: 20rem;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      text-align: left;
+      margin: 0px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+    }
   }
 `
 
@@ -75,6 +129,12 @@ export const CardList = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   width: 700px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `
 
 export const SecondDivRightContent = styled.div`
