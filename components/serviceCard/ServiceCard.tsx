@@ -7,7 +7,7 @@ export default function ServiceCard({title, text, buttonName, img_src }: CardPro
   return (
     <ServiceCardContainer>
       <StyledImage>
-        <Image src={img_src} alt="uma imagem" layout="responsive" />
+        <Image src={img_src} alt="uma imagem" style={{ width: "100%", height: "auto" }}/>
       </StyledImage>
       <ServiceCardContent>
         <h2>{title}</h2>

@@ -9,7 +9,9 @@ export default function Header() {
     <HeaderContainer>
       <div>
         <DivLeftSide>
-          <Image src={logo} alt="logo da lacrei saude" />
+          <Link href="/">
+            <Image src={logo} alt="logo da lacrei saude" />
+          </Link>
         </DivLeftSide>
         <DivRightSide>
           <Link href="https://lacreisaude.com.br/quem-somos/">
