@@ -8,7 +8,8 @@ export const FooterContainer = styled.footer`
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
+  padding: 0px 8.625rem;
   
 
     h2 {

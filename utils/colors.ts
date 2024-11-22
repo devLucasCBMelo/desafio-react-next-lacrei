@@ -58,5 +58,28 @@ const color_gradient = {
   rosa: 'linear-gradient(90deg, #DF1098, #BA17E2)',
 };
 
+const color_foreground_accent = {
+  lighter: '#DFF2ED', 
+  light: '#B2DFD0',
+  medium: '#4FB494',
+  base: '#018762',
+  dark: '#007756',
+  darker: '#014c37',
+}
 
-export { background_color, border_color, background_accent, color_text, color_gradient };
+const color_foreground_default = {
+  light: '#CFCFCF',
+  medium: '#515151',
+  default: '#131313',
+}
+
+
+export {
+  background_color,
+  border_color,
+  background_accent,
+  color_text,
+  color_gradient,
+  color_foreground_accent,
+  color_foreground_default,
+};

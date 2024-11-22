@@ -1,7 +1,7 @@
 import Header from "@/components/header/Header";
 import styles from "./page.module.css";
 import Footer from "@/components/footer/Footer";
-import { CardList, FirstDivContainer, SecondDivContainer, SecondDivLeftContent, SecondDivRightContent } from "./styles";
+import { CardList, Divider, FirstDivContainer, SecondDivContainer, SecondDivLeftContent, SecondDivRightContent } from "./styles";
 import Card from "@/components/card/Card";
 import ServiceCard from "@/components/serviceCard/ServiceCard";
 import doctorImage from '@/assets/doctor_image.png'
@@ -17,10 +17,6 @@ export default function Home() {
         <div>
           <h1>Olá, você está na Lacrei Saúde!</h1>
           <p>Conectamos pessoas <strong>LGBTQIAPN+</strong> com profissionais de saúde qualificados, proporcionando experiências de cuidado seguras e inclusivas</p>
-          {/* <div>
-            <button>Para Pacientes</button>
-            <button>Para Profissionais</button>
-          </div> */}
         </div>
       </FirstDivContainer>
       <SecondDivContainer>
@@ -43,6 +39,7 @@ export default function Home() {
           </SecondDivRightContent>
         </div>
       </SecondDivContainer>
+      <Divider />
       <Footer />
     </div>
   );

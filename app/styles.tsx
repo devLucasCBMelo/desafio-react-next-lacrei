@@ -1,8 +1,8 @@
 'use client';
-import { background_accent, color_text } from "@/utils/colors";
+import { background_accent, background_color, color_foreground_default, color_text } from "@/utils/colors";
 import styled from "styled-components";
 import rainbow_background from '@/assets/rainbow_background.jpg';
-import { spacing_stack } from "@/utils/spaces";
+import { spacing_inline, spacing_stack } from "@/utils/spaces";
 
 export const FirstDivContainer = styled.div`
   height: 33rem;
@@ -88,4 +88,11 @@ export const SecondDivRightContent = styled.div`
     text-align: center;
     margin-bottom: ${spacing_stack.xs};
   }
+`
+
+export const Divider = styled.div`
+  height: 1px;
+  background-color: ${color_foreground_default.light};
+  width: 80%;
+  margin-bottom: ${spacing_inline.l};
 `
