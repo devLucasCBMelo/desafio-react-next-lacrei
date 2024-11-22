@@ -60,11 +60,11 @@ export default function Register () {
                     name="senha"
                     minLength={8}
                     aria-describedby="senha-helpertext"
-                    type={showPassword ? 'password' : 'text'}
+                    type={showPassword ? 'text' : 'password'}
                     placeholder="Digite sua senha" required value={userPassword}
                     onChange={(event) => setUserPassword(event?.target.value)}
                     />
-                  <button type="button" onClick={hiddenOrHidePassword}>{showPassword ? <FaEyeSlash /> : <FaEye /> }</button>
+                  <button type="button" onClick={hiddenOrHidePassword}>{showPassword ? <FaEye/> : <FaEyeSlash /> }</button>
                 </InputBorder>
               </label>
               <p id="senha-helpertext">Senha incorreta, digite novamente.</p>
