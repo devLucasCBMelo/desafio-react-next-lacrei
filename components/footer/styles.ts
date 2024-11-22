@@ -21,6 +21,20 @@ export const FooterContainer = styled.footer`
     a {
       font-size: 16px;
     }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      #logo_lacrei_footer {
+        display: none;
+      }
+
+      #left_div_footer {
+        display: none;
+      }
+    }
 `;
 
 export const FooterBox = styled.div`

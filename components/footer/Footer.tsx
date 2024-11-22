@@ -11,9 +11,9 @@ export default function Footer() {
   return (
     <FooterContainer>
       <FooterBox>
-        <Image src={logo_branca} alt="logo da lacrei saúde" />
-        <div>
-          <ConectionBar>
+        <Image id="logo_lacrei_footer" src={logo_branca} alt="logo da lacrei saúde" />
+        <div id="left_div_footer">
+          <ConectionBar id="connection_bar_footer">
               <a href="https://www.facebook.com/lacrei.saude/">
                 <Image src={facebook_icon} alt="ícone do facebook" />
               </a>

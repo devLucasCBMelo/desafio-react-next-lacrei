@@ -81,7 +81,11 @@ export const SecondDivContainer = styled.div`
   width: 100vw;
 
   @media (max-width: 768px) {
-    height: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -133,7 +137,7 @@ export const CardList = styled.div`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 `
 
@@ -147,6 +151,27 @@ export const SecondDivRightContent = styled.div`
     width: 100%;
     text-align: center;
     margin-bottom: ${spacing_stack.xs};
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      width: 20rem;
+      font-size: 1.2rem;
+      line-height: 2.25rem;
+      margin: 0px;
+    }
+
+    p {
+      width: 300px;
+    }
+
+    div {
+      width: 500px;
+    }
   }
 `
 
