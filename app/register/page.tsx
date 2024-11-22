@@ -4,7 +4,11 @@ import Header from "@/components/header/Header";
 import Link from "next/link";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Buttons, ContentContainer, InputBorder, MainSection, RegisterBody } from "./styles";
+import { Buttons, ContentContainer, InputBorder, MainSection, Presentation, RegisterBody } from "./styles";
+import { Divider } from "../styles";
+import styles from "./page.module.css";
+import medico_pacientes from '@/assets/medico_pacientes.webp';
+import Image from "next/image";
 
 export default function Register () {
   const [showPassword, setShotPassword] = useState(false);
@@ -18,23 +22,29 @@ export default function Register () {
   }
 
   return (
-    <div>
+    <div className={styles.page}>
       <RegisterBody>
         <Header />
         <MainSection>
           <ContentContainer>
-            <h2>Boas-vindas à Lacrei Saúde</h2>
-            <p>Entre ou crie sua conta Lacrei Saúde</p>
+            <Presentation>
+              <h2>Boas-vindas à Lacrei Saúde</h2>
+              <p>Entre ou crie sua conta Lacrei Saúde</p>
+            </Presentation>
             <form action="">
-              <label htmlFor="email">E-mail</label>
-              <InputBorder>
-                <input id="email" name="email" type="email" placeholder="Digite seu e-mail" required/>
-              </InputBorder>
-              <label htmlFor="senha">Senha</label>
-              <InputBorder>
-                <input id="senha" name="senha" minLength={8} aria-describedby="senha-helpertext" type={showPassword ? 'password' : 'text'} placeholder="Digite sua senha" required/>
-                <button type="button" onClick={hiddenOrHidePassword}>{showPassword ? <FaEyeSlash /> : <FaEye /> }</button>
-              </InputBorder>
+              <label htmlFor="email">
+                E-mail
+                <InputBorder>
+                  <input id="email" name="email" type="email" placeholder="Digite seu e-mail" required/>
+                </InputBorder>
+              </label>
+              <label htmlFor="senha">
+                Senha
+                <InputBorder>
+                  <input id="senha" name="senha" minLength={8} aria-describedby="senha-helpertext" type={showPassword ? 'password' : 'text'} placeholder="Digite sua senha" required/>
+                  <button type="button" onClick={hiddenOrHidePassword}>{showPassword ? <FaEyeSlash /> : <FaEye /> }</button>
+                </InputBorder>
+              </label>
               <p id="senha-helpertext">Senha incorreta, digite novamente.</p>
               <Buttons>
                 <button type="submit">Entrar</button>
@@ -44,8 +54,9 @@ export default function Register () {
               </Buttons>
             </form>
           </ContentContainer>
-          <div>Imagem aqui</div>
+          <Image src={medico_pacientes} alt="Uma médica atendendo um casal" style={{width: 500, height: 400, borderRadius: 30, boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.7)'}} />
         </MainSection>
+        <Divider /> 
       </RegisterBody>
       <Footer />
     </div>

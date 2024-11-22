@@ -9,9 +9,10 @@ export const FooterContainer = styled.footer`
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  padding: 0px 8.625rem;
+  max-width: 1100px;
+  padding-bottom: 3rem;
+  gap: 1rem;
   
-
     h2 {
       font-size: 18px;
       margin-bottom: 8px;
