@@ -80,6 +80,7 @@ export const InputBorder = styled.div`
 
   input {
     border: none;
+    outline: none;
     width: 100%;
     padding: 0px 8px;
     font-family: 'Nunito', 'sans-serif';

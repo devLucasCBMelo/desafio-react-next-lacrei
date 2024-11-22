@@ -12,6 +12,8 @@ import Image from "next/image";
 
 export default function Register () {
   const [showPassword, setShotPassword] = useState(false);
+  const [userEmail, setUserEmail] = useState('');
+  const [userPassword, setUserPassword] = useState('');
 
   const hiddenOrHidePassword = () => {
     if (showPassword == false) {
@@ -19,6 +21,10 @@ export default function Register () {
     } else {
       setShotPassword(false);
     }
+  }
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event?.preventDefault();
   }
 
   return (
@@ -31,17 +37,33 @@ export default function Register () {
               <h2>Boas-vindas à Lacrei Saúde</h2>
               <p>Entre ou crie sua conta Lacrei Saúde</p>
             </Presentation>
-            <form action="">
+            <form onSubmit={(event) => handleSubmit(event)}>
               <label htmlFor="email">
                 E-mail
                 <InputBorder>
-                  <input id="email" name="email" type="email" placeholder="Digite seu e-mail" required/>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                    value={userEmail}
+                    onChange={(event) => setUserEmail(event?.target.value)}
+                  />
                 </InputBorder>
               </label>
               <label htmlFor="senha">
                 Senha
                 <InputBorder>
-                  <input id="senha" name="senha" minLength={8} aria-describedby="senha-helpertext" type={showPassword ? 'password' : 'text'} placeholder="Digite sua senha" required/>
+                  <input
+                    id="senha"
+                    name="senha"
+                    minLength={8}
+                    aria-describedby="senha-helpertext"
+                    type={showPassword ? 'password' : 'text'}
+                    placeholder="Digite sua senha" required value={userPassword}
+                    onChange={(event) => setUserPassword(event?.target.value)}
+                    />
                   <button type="button" onClick={hiddenOrHidePassword}>{showPassword ? <FaEyeSlash /> : <FaEye /> }</button>
                 </InputBorder>
               </label>
