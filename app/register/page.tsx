@@ -45,8 +45,8 @@ export default function Register () {
       <RegisterBody>
         <Header />
         <MainSection>
-          <ContentContainer>
-            <Presentation>
+          <ContentContainer id="content_container">
+            <Presentation id="presentation_container">
               <h2>Boas-vindas à Lacrei Saúde</h2>
               <p>Entre ou crie sua conta Lacrei Saúde</p>
             </Presentation>
@@ -88,7 +88,7 @@ export default function Register () {
               </Buttons>
             </form>
           </ContentContainer>
-          <Image src={medico_pacientes} alt="Uma médica atendendo um casal" style={{width: 500, height: 400, borderRadius: 30, boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.7)'}} />
+          <Image id="doctor_patients_image" src={medico_pacientes} alt="Uma médica atendendo um casal" style={{width: 500, height: 400, borderRadius: 30, boxShadow: '5px 5px 15px rgba(0, 0, 0, 0.7)'}} />
         </MainSection>
         <Divider /> 
       </RegisterBody>

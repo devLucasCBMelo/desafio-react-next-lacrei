@@ -9,6 +9,11 @@ export const RegisterBody = styled.div`
   justify-content: start;
   padding: 0 8.625rem;
   width: 100%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0px;
+  }
 `
 
 export const MainSection = styled.section`
@@ -19,6 +24,35 @@ export const MainSection = styled.section`
   width: 100%;
   max-width: 1100px;
   gap: 4rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    height: 100%;
+    gap: 1rem;
+
+    #content_container {
+      padding-top: 24px;
+      padding-bottom: 48px;
+    }
+
+    #presentation_container h2, p {
+      width: 500px;
+    }
+
+    #email {
+      width: 100%;
+    }
+
+    #doctor_patients_image {
+      width: 400px;
+      height: 300px;
+    }
+
+  }
 `
 
 export const ContentContainer = styled.div`
