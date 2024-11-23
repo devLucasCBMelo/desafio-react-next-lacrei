@@ -12,8 +12,8 @@ import Image from "next/image";
 
 export default function Register () {
   const [showPassword, setShotPassword] = useState(false);
-  const [userEmail, setUserEmail] = useState('');
-  const [userPassword, setUserPassword] = useState('');
+  const [userEmail, setUserEmail] = useState<string>('');
+  const [userPassword, setUserPassword] = useState<string>('');
   const [checkValues, setCheckValues] = useState(true);
 
   const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userEmail);

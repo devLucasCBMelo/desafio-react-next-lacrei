@@ -10,7 +10,7 @@ export default function Header() {
       <div>
         <DivLeftSide>
           <Link href="/">
-            <Image id="logo_lacrei_header" src={logo} alt="logo da lacrei saude" />
+            <Image id="logo_lacrei_header" data-testid="logo_lacrei_header" src={logo} alt="logo da lacrei saude" />
           </Link>
         </DivLeftSide>
         <DivRightSide>
