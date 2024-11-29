@@ -1,6 +1,7 @@
 'use client';
 
 import { background_color, color_gradient } from "@/utils/colors";
+import { spacing_stack } from "@/utils/spaces";
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
@@ -60,5 +61,20 @@ export const CardContainer = styled.div`
       padding: 4px 4px;
       width: 400px;
     }
+  }
+
+  @media (max-width: 420px) {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  h4 {
+    margin-left: ${spacing_stack.m}; 
+  }
+
+  p {
+    width: 100%;
+    margin: ${spacing_stack.xxs} ${spacing_stack.xs};
+    padding: ${spacing_stack.xs};
   }
 `

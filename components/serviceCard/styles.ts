@@ -7,11 +7,28 @@ import styled from "styled-components";
 export const ServiceCardContainer = styled.div`
   display: flex;
   flex-direction: row;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   margin-bottom: ${spacing_stack.m};
   background-color: ${background_color.highlight};
 
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 420px) {
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `
 export const ServiceCardContent = styled.div`
   display: flex;
@@ -65,6 +82,45 @@ export const ServiceCardContent = styled.div`
         outline-offset: 4px;
       }
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 400px;
+    margin-top: ${spacing_stack.m};
+    margin-left: 0;
+    margin-bottom: ${spacing_stack.xxs};
+
+    p {
+      width: 100%;
+      max-width: 600px;
+      margin-left: ${spacing_stack.xs};
+    }
+  }
+
+  @media (max-width: 420px) {
+    width: 100%;
+    max-width: 320px;
+
+    img {
+      width: 200px;
+    }
+
+    h2 {
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+      max-width: 300px;
+      margin: 2px 2px;
+    }
+
+    button {
+      font-size: 1rem;
+      width: 100%;
+    }
+
+  }
 `
 
 export const StyledImage = styled.div`
@@ -79,4 +135,20 @@ export const StyledImage = styled.div`
   border-bottom-left-radius: 20px;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 200px;
+    margin-top: ${spacing_stack.m};
+    margin-left: 0;
+    margin-bottom: ${spacing_stack.xxs}
+  }
+
+  @media (max-width: 420px) {
+    width: 100%;
+    max-width: 200px;
+    margin-top: ${spacing_stack.m};
+    margin-left: 0;
+    margin-bottom: ${spacing_stack.xxs}
+  }
 `;

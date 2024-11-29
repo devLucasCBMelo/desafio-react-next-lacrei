@@ -133,6 +133,7 @@ export const SecondDivLeftContent = styled.div`
   h2 {
     width: 100%;
     text-align: center;
+    margin-top: ${spacing_stack.xs}
   }
 
   h3 {
@@ -159,6 +160,12 @@ export const SecondDivLeftContent = styled.div`
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5rem;
+    }
+  }
+
+  @media (max-width: 420px) {
+    h2 {
+      margin-top: ${spacing_stack.xs}
     }
   }
 `
@@ -206,6 +213,12 @@ export const SecondDivRightContent = styled.div`
 
     div {
       width: 500px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    h2 {
+      margin-top: ${spacing_stack.xs};
     }
   }
 `
