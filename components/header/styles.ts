@@ -51,6 +51,7 @@ export const HeaderContainer = styled.header`
       display: none;
     }
   }
+
 `;
 
 export const DivLeftSide = styled.div`

@@ -70,6 +70,8 @@ export const FirstDivContainer = styled.div`
     }
 
    }
+
+   
 `;
 
 export const SecondDivContainer = styled.div`
