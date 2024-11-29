@@ -7,6 +7,7 @@ import styled from "styled-components";
 export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 250px;
   width: 250px;
   gap: 1rem;
@@ -21,6 +22,8 @@ export const CardContainer = styled.div`
 
   h4 {
   font-family: 'Nunito';
+  width: 100%;
+  margin-left: 0;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
