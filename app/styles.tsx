@@ -15,6 +15,7 @@ export const FirstDivContainer = styled.div`
   div {
     border-radius: 5px;
     margin-left: 162px;
+    width: 400px;
   }
 
   h1 {
@@ -23,11 +24,11 @@ export const FirstDivContainer = styled.div`
     font-weight: 700;
     color: ${color_text.accent};
     background-color: white;
-    width: 451px;
+    width: 100%;
   }
 
   p {
-    width: 451px;
+    width: 100%;
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 2rem;
@@ -52,6 +53,7 @@ export const FirstDivContainer = styled.div`
 
     div {
       margin: 0px 48px;
+      width: 80%;
     }
 
     h1 {
@@ -59,6 +61,7 @@ export const FirstDivContainer = styled.div`
       line-height: 2.4rem;
       margin-top: 1rem;
       border-radius: 8px;
+      width: 100%
     }
 
     p {
@@ -67,11 +70,41 @@ export const FirstDivContainer = styled.div`
       background-color: ${background_color.default};
       border-radius: 8px;
       padding: 8px 8px;
+      width: 100%;
     }
-
    }
 
-   
+   @media (max-width: 420px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    width: 100%;
+    max-width: 410px;
+
+    div {
+      margin: 0px 48px;
+      width: 100%;
+      max-width: 340px;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      line-height: 2.4rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      background-color: ${background_color.default};
+      border-radius: 8px;
+      padding: 8px 8px;
+      width: 100%;
+    }
+   }
 `;
 
 export const SecondDivContainer = styled.div`
