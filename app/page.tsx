@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <FirstDivContainer>
         <div>
-          <h1>Olá, você está na Lacrei Saúde!</h1>
+          <h1>Olá , você está na Lacrei Saúde!</h1>
           <p>Conectamos pessoas <strong>LGBTQIAPN+</strong> com profissionais de saúde qualificados, proporcionando experiências de cuidado seguras e inclusivas</p>
         </div>
       </FirstDivContainer>
