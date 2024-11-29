@@ -16,6 +16,8 @@ export const CardContainer = styled.div`
   text-align: center;
   border-radius: 8px;
   margin-left: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+
 
   h4 {
   font-family: 'Nunito';
