@@ -71,14 +71,18 @@ export const CardContainer = styled.div`
   @media (max-width: 420px) {
     width: 100%;
     max-width: 370px;
+    gap: 0;
   }
 
   h4 {
-    margin-left: ${spacing_stack.m}; 
+    margin-left: ${spacing_stack.m};
+    width: 100%;
+    max-width: 320px;
   }
 
   p {
     width: 100%;
+    max-width: 350px;
     margin: ${spacing_stack.xxs} ${spacing_stack.xs};
     padding: ${spacing_stack.xs};
   }
